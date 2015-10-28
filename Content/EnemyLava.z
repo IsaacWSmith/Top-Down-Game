@@ -1,0 +1,24 @@
+class EnemyLava : ZilchComponent
+{
+    function Initialize(init : CogInitializer)
+    {
+        //Zero.Connect(this.Space, Events.LogicUpdate, this.OnLogicUpdate);
+        
+        //Can replace Events.CollisionStarted with Events.CollisionPersists
+        Zero.Connect(this.Owner, Events.CollisionStarted, this.OnCollisionStarted);
+    }
+    function OnCollisionStarted(event : CollisionEvent)
+    {
+        Console.WriteLine("StepOne");
+        if(event.OtherObject.Name == "Joe")
+        {
+            Console.WriteLine("StepTwo");
+            var temp = this.Space.FindObjectByName("Joe").HealthScript.Health;
+            temp -=1;
+            this.Space.FindObjectByName("Joe").HealthScript.Health = temp;
+        }
+    }
+    function OnLogicUpdate(event : UpdateEvent)
+    {
+    }
+}

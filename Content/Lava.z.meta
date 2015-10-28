@@ -1,0 +1,8 @@
+TextContent = 
+{
+	ZilchScriptBuilder = 
+	{
+		string Name = "Lava",
+		uint64 ResourceId = 5609512eb9876071,
+	},
+},

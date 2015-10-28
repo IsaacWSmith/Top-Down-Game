@@ -1,0 +1,22 @@
+class RandomNumberGenerator : ZilchComponent
+{
+    function Initialize(init : CogInitializer)
+    {
+    var randNumGen=new Random(); 
+    var randNum=randNumGen. DieRoll(20);
+    Console.WriteLine (randNum);
+   
+     if (randNum==20)
+     {
+         Console.WriteLine("You throw your sword and slay Alduin. Congrats bro.");
+    }
+    else if (randNum >= 10)
+    {
+        Console.WriteLine("You hide under a rock and live your new life as a sad hermit.");
+}        
+    if (randNum <= 10)
+    {
+        Console.WriteLine("Your skeleton will llie as a reminder to all who pass through here; don't mess with dragons.");
+    }
+}
+}

@@ -1,0 +1,20 @@
+ImageContent = 
+{
+	SpriteSourceBuilder = 
+	{
+		string Name = "Parthanon1",
+		uint64 ResourceId = 563966bbd11e9079,
+		uint64 AtlasId = 5274cf95e4a661fd,
+		uint FrameSizeX = 490,
+		uint FrameSizeY = 149,
+		uint FrameCount = 1,
+		float FrameDelay = 0.0833333358,
+		float OriginX = 245,
+		float OriginY = 74,
+		float PixelsPerUnit = 64,
+		bool Smoothing = false,
+		bool Looping = true,
+		Vec4 Slices = [0, 0, 0, 0],
+		SpriteFill Fill = Stretch,
+	},
+},

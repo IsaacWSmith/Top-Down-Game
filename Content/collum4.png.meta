@@ -1,0 +1,20 @@
+ImageContent = 
+{
+	SpriteSourceBuilder = 
+	{
+		string Name = "collum4",
+		uint64 ResourceId = 563967980cd66434,
+		uint64 AtlasId = 5274cf95e4a661fd,
+		uint FrameSizeX = 233,
+		uint FrameSizeY = 507,
+		uint FrameCount = 1,
+		float FrameDelay = 0.0833333358,
+		float OriginX = 116,
+		float OriginY = 253,
+		float PixelsPerUnit = 64,
+		bool Smoothing = false,
+		bool Looping = true,
+		Vec4 Slices = [0, 0, 0, 0],
+		SpriteFill Fill = Stretch,
+	},
+},

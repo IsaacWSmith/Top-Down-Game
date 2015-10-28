@@ -1,0 +1,54 @@
+class ActionController : ZilchComponent
+{
+    var Area : Area;
+    function Initialize(init : CogInitializer)
+    {
+        Zero.Connect(Zero.Keyboard, Events.KeyDown, this.OnKeyDown);
+    }
+
+    function OnKeyDown(event : KeyboardEvent)
+    {
+        if(event.Key == Keys.Space)
+        {
+            this.BeginDemonstration();
+    }
+}
+
+function BeginDemonstration()
+    {
+       var masterSeq = Action.Sequence(this.Owner.Actions);
+
+    var masterGrp = Action.Group(masterSeq);
+
+
+
+    Action.Property(masterGrp, @this.Area.Size,
+                    Real2(0.0, 0.0), 0.0, Ease.QuadInOut);
+
+
+
+    var moveSeq = Action.Sequence(masterGrp);
+
+    Action.Property(moveSeq, @this.Owner.Transform.Translation,
+                    Real3(7.0, 0.0, 0.0), 1.0, Ease.QuadInOut);
+    Action.Property(moveSeq, @this.Owner.Transform.Translation,
+                    Real3(7.0, 2.0, 0.0), 1.0, Ease.QuadInOut);
+
+
+
+    var colorSeq = Action.Sequence(masterGrp);
+
+    Action.Delay(colorSeq, 0.5);
+
+    var colorGrp = Action.Group(colorSeq);
+
+    Action.Property(colorGrp, @this.Owner.Sprite.Color,
+                    Real4(1.0, 0.0, 0.0, 1.0),
+                    7.0, Ease.QuadInOut);
+    Action.Property(colorGrp, @this.Owner.Transform.EulerAngles,
+                    Real3(0.0, 0.0, Math.ToRadians(3000.0)),
+                    7.0, Ease.QuadInOut);
+
+    Action.Call(masterSeq, this.Owner.Destroy);
+    }
+}
