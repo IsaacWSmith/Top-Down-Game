@@ -1,0 +1,20 @@
+ImageContent = 
+{
+	SpriteSourceBuilder = 
+	{
+		string Name = "Beam",
+		uint64 ResourceId = 5626cff5460c3cb4,
+		uint64 AtlasId = 5274cf95e4a661fd,
+		uint FrameSizeX = 267,
+		uint FrameSizeY = 269,
+		uint FrameCount = 1,
+		float FrameDelay = 0.0833333358,
+		float OriginX = 133,
+		float OriginY = 134,
+		float PixelsPerUnit = 64,
+		bool Smoothing = false,
+		bool Looping = true,
+		Vec4 Slices = [0, 0, 0, 0],
+		SpriteFill Fill = Stretch,
+	},
+},

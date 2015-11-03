@@ -6,7 +6,7 @@ Cog =
 		string ProjectOwner = "",
 		string DefaultLevel = "Level",
 		string ProjectSpace = "Space",
-		string ProjectFolder = "C:\Users\17.isaac.smith\Documents\ZeroProjects\Game1",
+		string ProjectFolder = "C:\Users\17.isaac.smith\Desktop\GitHub\Top-Down-Game",
 		uint ProjectEngineRevision = 12259,
 		bool AutoTakeProjectScreenshot = true,
 	},

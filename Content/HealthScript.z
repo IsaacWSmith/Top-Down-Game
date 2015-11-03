@@ -11,7 +11,7 @@ class HealthScript : ZilchComponent
     {
         if(this.Health <= 0)
         {
-            this.Space.ReloadLevel();
+     
         }
     }
 }

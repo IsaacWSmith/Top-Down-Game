@@ -1,0 +1,20 @@
+class Checkpoint : ZilchComponent
+{
+    var CheckpointLocation : Real3 = Real3();
+    function Initialize(init : CogInitializer)
+    {
+        this.CheckpointLocation = this.Owner.Transform.Translation;
+        Zero.Connect(this.Owner, Events.CollisionStarted, this.OnCollisionStarted);
+    }
+    function OnCollisionStarted(event : CollisionEvent)
+    {
+       if(event.OtherObject.Name == "Death")
+        {
+            this.Owner.Transform.Translation = this.CheckpointLocation;
+        }
+        if(event.OtherObject.Name == "Checkpoint")
+        {
+            this.CheckpointLocation = event.OtherObject.Transform.Translation;
+        }
+    }   
+}

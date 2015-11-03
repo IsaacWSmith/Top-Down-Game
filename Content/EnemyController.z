@@ -3,14 +3,14 @@ class EnemyController : ZilchComponent
     [Property]
     var PaceSpeed: Real = 5.0;
     [Property]
-    var ChaseSpeed: Real = 10.0;
+    var ChaseSpeed: Real = 5.0;
     var MaxMoveDistance: Real = 10.0;
     var PaceDirection: Real3 = Real3(0.0, 1.0, 0.0);
     var StartPosition: Real3 = Real3();
     
     [Property]
     var TargetObject: CogPath = null;
-    var ChaseTriggerDistance: Real = 400.0;
+    var ChaseTriggerDistance: Real = 7.0;
     var DistanceFromTarget: Real = 0.0;
     var ChaseDirection: Real3 = Real3();
     var ChaseColor:Real4 = Real4 (1.0, 0.0, 0.0, 1.0);
@@ -39,7 +39,6 @@ class EnemyController : ZilchComponent
             if (this.TargetWithinRange)
             {
                 this.ChaseTarget(event);
-            Console.WriteLine("Chase Joe");
             }
             else
             {
@@ -71,7 +70,13 @@ class EnemyController : ZilchComponent
     }
     function ChaseTarget(event: UpdateEvent)
     {
-        
+        this.Owner.Sprite.Color = this.ChaseColor;
         this.Owner.Transform.Translation += this.ChaseDirection * event.Dt * this.ChaseSpeed;
+	//use the code below to have the enemy rotate towards you and chase you. 
+	//Requires the orientation component
+	//var forward = this.Owner.Orientation.WorldForward;
+        //this.Owner.Orientation.LookAtPoint(this.Space.FindObjectByName("player").Transform.Translation);
+        //this.Owner.Transform.Translation += this.Speed*forward * event.Dt;
+
     }
 }
