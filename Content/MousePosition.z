@@ -1,0 +1,9 @@
+class MousePosition : ZilchComponent
+{
+    function Initialize(init : CogInitializer)
+    {
+    }
+    function OnLogicUpdate(event : UpdateEvent)
+    {
+    }
+}
