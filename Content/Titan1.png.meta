@@ -1,0 +1,20 @@
+ImageContent = 
+{
+	SpriteSourceBuilder = 
+	{
+		string Name = "Titan1",
+		uint64 ResourceId = 565da1a6932611a6,
+		uint64 AtlasId = 5274cf95e4a661fd,
+		uint FrameSizeX = 398,
+		uint FrameSizeY = 481,
+		uint FrameCount = 1,
+		float FrameDelay = 0.0833333358,
+		float OriginX = 199,
+		float OriginY = 240,
+		float PixelsPerUnit = 64,
+		bool Smoothing = false,
+		bool Looping = true,
+		Vec4 Slices = [0, 0, 0, 0],
+		SpriteFill Fill = Stretch,
+	},
+},

@@ -10,7 +10,7 @@ class EnemyController : ZilchComponent
     
     [Property]
     var TargetObject: CogPath = null;
-    var ChaseTriggerDistance: Real = 7.0;
+    var ChaseTriggerDistance: Real = 60;
     var DistanceFromTarget: Real = 0.0;
     var ChaseDirection: Real3 = Real3();
     var ChaseColor:Real4 = Real4 (1.0, 0.0, 0.0, 1.0);
@@ -70,7 +70,6 @@ class EnemyController : ZilchComponent
     }
     function ChaseTarget(event: UpdateEvent)
     {
-        this.Owner.Sprite.Color = this.ChaseColor;
         this.Owner.Transform.Translation += this.ChaseDirection * event.Dt * this.ChaseSpeed;
 	//use the code below to have the enemy rotate towards you and chase you. 
 	//Requires the orientation component

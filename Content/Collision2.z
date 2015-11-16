@@ -1,0 +1,19 @@
+class Collision2 : ZilchComponent
+{
+        function Initialize(init : CogInitializer)
+        {
+        Zero.Connect(this.Owner, Events.CollisionStarted,this.OnCollisionStarted);
+        Zero.Connect(this.Owner, Events.CollisionEnded,this.OnCollisionEnded);
+        }
+        function OnCollisionStarted(event : CollisionEvent)
+            {
+            if(event.OtherObject.Name == "Joe")
+            {
+                Console.WriteLine("hello");
+            this.Space.LoadLevel(Level.Find("Lobby"));
+            }
+        }
+        function OnCollisionEnded(event : CollisionEvent)
+        {
+    }
+}

@@ -10,12 +10,12 @@ class Lava : ZilchComponent
     function OnCollisionStarted(event : CollisionEvent)
     {
         Console.WriteLine("StepOne");
-        if(event.OtherObject.Name == "Bob")
+        if(event.OtherObject.Name == "Crab")
         {
             Console.WriteLine("StepTwo");
-            var temp = this.Space.FindObjectByName("Bob").HealthScript.Health;
+            var temp = this.Space.FindObjectByName("Crab").HealthScript.Health;
             temp -=1;
-            this.Space.FindObjectByName("Bob").HealthScript.Health = temp;
+            this.Space.FindObjectByName("Crab").HealthScript.Health = temp;
         }
     }
     function OnLogicUpdate(event : UpdateEvent)

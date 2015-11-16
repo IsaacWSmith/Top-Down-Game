@@ -9,7 +9,7 @@ class Bullet : ZilchComponent
     }
     function OnCollisionStarted(event : CollisionEvent)
     {
-    if(event.OtherObject.Name == "Dargon")
+    if(event.OtherObject.Name == "Crab")
     this.Owner.Destroy();
     }
     function OnLogicUpdate(event : UpdateEvent)

@@ -1,0 +1,20 @@
+ImageContent = 
+{
+	SpriteSourceBuilder = 
+	{
+		string Name = "Crab",
+		uint64 ResourceId = 5655ae25b42a7fc0,
+		uint64 AtlasId = 5274cf95e4a661fd,
+		uint FrameSizeX = 146,
+		uint FrameSizeY = 143,
+		uint FrameCount = 1,
+		float FrameDelay = 0.0833333358,
+		float OriginX = 73,
+		float OriginY = 71,
+		float PixelsPerUnit = 64,
+		bool Smoothing = false,
+		bool Looping = true,
+		Vec4 Slices = [0, 0, 0, 0],
+		SpriteFill Fill = Stretch,
+	},
+},

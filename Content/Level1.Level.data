@@ -1,0 +1,2854 @@
+Level = 
+{
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 1,
+		},
+		Named = 
+		{
+			string Name = "LevelSettings",
+		},
+		GravityEffect = 
+		{
+			bool Active = true,
+			bool WakeUpOnChange = false,
+			bool LocalSpaceDirection = true,
+			float Strength = 10,
+			Vec3 Direction = [0, -1, 0],
+		},
+		DragEffect = 
+		{
+			bool Active = true,
+			bool WakeUpOnChange = false,
+			float Drag = 0.699999988,
+		},
+		CameraViewport = 
+		{
+			bool Background = true,
+			Vec2 Offset = [0, 0],
+			Vec2 Size = [1, 1],
+			int Layer = 0,
+			bool Active = true,
+			bool Blocking = true,
+			CogPath Renderer = 
+			{
+				string Path = ".",
+				bool ErrorOnResolveToNull = false,
+				bool ErrorOnPathCantCompute = false,
+				bool ErrorOnDirectLinkFail = false,
+				bool UpdateCogOnPathChange = true,
+				bool UpdatePathOnCogChange = true,
+				bool UpdateCogOnInitialize = true,
+				bool ResolvedNullErrorOccurred = false,
+				uint ResolvedCog = 1,
+				CogPathPreference PathPreference0 = CogRelative,
+				CogPathPreference PathPreference1 = SpaceRelative,
+				CogPathPreference PathPreference2 = Absolute,
+			},
+			CogPath Camera = 
+			{
+				string Path = ":/Camera",
+				bool ErrorOnResolveToNull = false,
+				bool ErrorOnPathCantCompute = false,
+				bool ErrorOnDirectLinkFail = false,
+				bool UpdateCogOnPathChange = true,
+				bool UpdatePathOnCogChange = true,
+				bool UpdateCogOnInitialize = true,
+				bool ResolvedNullErrorOccurred = false,
+				uint ResolvedCog = 2,
+				CogPathPreference PathPreference0 = CogRelative,
+				CogPathPreference PathPreference1 = SpaceRelative,
+				CogPathPreference PathPreference2 = Absolute,
+			},
+			ViewportScaling Scaling = Fill,
+			Vec2 Resolution = [1280, 720],
+			Vec4 MarginColor = [0, 0, 0, 1],
+		},
+		ForwardRenderer = 
+		{
+			Vec4 ClearColor = [0.155000001, 0.155000001, 0.155000001, 1],
+			bool DrawNonVisible = false,
+			bool DrawDebugObjects = true,
+			bool DrawEditorIcons = true,
+			bool EditorIconDepth = true,
+			bool Wireframe = false,
+		},
+		GridDraw = 
+		{
+			bool Active = true,
+			bool HalfCellOffset = false,
+			float CellSize = 1,
+			GridAxis Axis = ZAxis,
+			int Lines = 100,
+			bool DrawAxisOrigins = true,
+			bool AlwaysDrawInEditor = true,
+			bool DrawInGame = false,
+			Vec4 GridColor = [0.5, 0.5, 0.5, 0.400000006],
+			Vec4 GridHiLight = [0, 0, 0, 0.400000006],
+			int HilightInterval = 10,
+			bool FollowEditorCamera = false,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 3,
+		},
+		Named = 
+		{
+			string Name = "EditorCamera",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-190.9729, -7.30553913, 49.9999924],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [-0, -1.09278471e-008, 0, 1],
+		},
+		Camera = 
+		{
+			ProjectionMode ProjectionMode = Orthographic,
+			Facing Facing = NegativeZ,
+			CameraTransparentSort TransparentSort = ZDepth,
+			float FieldOfView = 45,
+			float NearPlane = 0.5,
+			float FarPlane = 500,
+			float Size = 100,
+		},
+		EditorCameraController = 
+		{
+			ControlMode ControlMode = ZPlane,
+			float LookDistance = 50,
+			float VerticalAngle = 0,
+			float HorizontalAngle = 0,
+			Vec3 LookTarget = [-190.9729, -7.30553913, -7.49682613e-006],
+			float MoveSensitivity = 1,
+		},
+		EditorRenderer = 
+		{
+			Vec4 ClearColor = [0.155000001, 0.155000001, 0.155000001, 1],
+			bool DrawNonVisible = true,
+			bool DrawDebugObjects = true,
+			bool DrawEditorIcons = true,
+			bool Wireframe = false,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 4,
+		},
+		Named = 
+		{
+			string Name = "Joe",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-9.92025566, -0.0423736572, 4.08390889e-007],
+			Vec3 Scale = [6.49413681, 6.78306913, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			bool VisibilityEvents = true,
+			bool CastShadows = false,
+			Vec4 Color = [1, 1, 1, 1],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			string SpriteSource = "5656fb91d47a6f46:Joe",
+			bool RenderMask = false,
+			bool FlipX = false,
+			bool FlipY = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+		},
+		PlayerMovement = 
+		{
+		},
+		ButtonSpawner = 
+		{
+		},
+		Orientation = 
+		{
+			Vec3 GlobalUp = [0, 1, 0],
+			Vec3 UpVector = [0, 1, 0],
+			Vec3 ForwardVector = [0, 0, 1],
+			OrientationBases DefaultBases = ForwardZUpY,
+		},
+		RigidBody = 
+		{
+			bool Static = false,
+			bool Asleep = false,
+			bool Kinematic = true,
+			bool RotationLocked = false,
+			bool Mode2D = true,
+			bool AllowSleep = true,
+			bool Inherit2DMode = true,
+			Vec3 Velocity = [0, 0, 0],
+			Vec3 AngularVelocity = [0, 0, 0],
+		},
+		BoxCollider = 
+		{
+			bool Ghost = false,
+			bool SendsMessages = true,
+			bool Seamless = true,
+			string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
+			string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+			Vec3 Offset = [0, 0, 0],
+			Vec3 Size = [0.25, 0.75, 0.5],
+		},
+		HealthScript = 
+		{
+			float Health = 5,
+		},
+		Hierarchy = 
+		{
+			Cog = 
+			{
+				LinkId = 
+				{
+					uint Id = 2,
+				},
+				Named = 
+				{
+					string Name = "Camera",
+				},
+				Transform = 
+				{
+					Vec3 Translation = [0.0790891647, 0.344581127, 40],
+					Vec3 Scale = [0.335058242, 0.323418587, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Camera = 
+				{
+					ProjectionMode ProjectionMode = Orthographic,
+					Facing Facing = NegativeZ,
+					CameraTransparentSort TransparentSort = InheritFromSpace,
+					float FieldOfView = 45,
+					float NearPlane = 0.5,
+					float FarPlane = 200,
+					float Size = 200,
+				},
+				SoundListener = 
+				{
+					bool Active = true,
+				},
+			},
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 5,
+		},
+		Named = 
+		{
+			string Name = "Palm Tree",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-20.8676224, 21.3556328, -1],
+			Vec3 Scale = [16.8084126, 16.4031715, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			bool VisibilityEvents = true,
+			bool CastShadows = false,
+			Vec4 Color = [1, 1, 1, 1],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			string SpriteSource = "562affeb5da6acf0:Palm tree",
+			bool RenderMask = false,
+			bool FlipX = false,
+			bool FlipY = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 6,
+		},
+		Named = 
+		{
+			string Name = "Palm Tree",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-103.814987, 27.7766838, -1],
+			Vec3 Scale = [16.8084126, 16.4031715, 1],
+			Quat Rotation = [0, 0.999957621, 0, -0.00920346659],
+		},
+		Sprite = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			bool VisibilityEvents = true,
+			bool CastShadows = false,
+			Vec4 Color = [1, 1, 1, 1],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			string SpriteSource = "562affeb5da6acf0:Palm tree",
+			bool RenderMask = false,
+			bool FlipX = false,
+			bool FlipY = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 7,
+		},
+		Named = 
+		{
+			string Name = "Palm Tree",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-53.4991951, -18.0127945, 5],
+			Vec3 Scale = [16.8084126, 16.4031715, 1],
+			Quat Rotation = [0, 0.999957621, 0, -0.00920346659],
+		},
+		Sprite = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			bool VisibilityEvents = true,
+			bool CastShadows = false,
+			Vec4 Color = [1, 1, 1, 1],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			string SpriteSource = "562affeb5da6acf0:Palm tree",
+			bool RenderMask = false,
+			bool FlipX = false,
+			bool FlipY = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 8,
+		},
+		Named = 
+		{
+			string Name = "Palm Tree",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [42.5240097, -0.854887009, 1.09313028e-007],
+			Vec3 Scale = [16.8084126, 16.4031715, 1],
+			Quat Rotation = [0, 0.999957621, 0, -0.00920346659],
+		},
+		Sprite = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			bool VisibilityEvents = true,
+			bool CastShadows = false,
+			Vec4 Color = [1, 1, 1, 1],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			string SpriteSource = "562affeb5da6acf0:Palm tree",
+			bool RenderMask = false,
+			bool FlipX = false,
+			bool FlipY = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 9,
+		},
+		Named = 
+		{
+			string Name = "Palm Tree",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [11.8692265, 23.2503738, -1],
+			Vec3 Scale = [16.8084126, 16.4031715, 1],
+			Quat Rotation = [0, 0.999957621, 0, -0.00920346659],
+		},
+		Sprite = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			bool VisibilityEvents = true,
+			bool CastShadows = false,
+			Vec4 Color = [1, 1, 1, 1],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			string SpriteSource = "562affeb5da6acf0:Palm tree",
+			bool RenderMask = false,
+			bool FlipX = false,
+			bool FlipY = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 10,
+		},
+		Named = 
+		{
+			string Name = "Sand",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-22.2360477, -50.7496414, -40],
+			Vec3 Scale = [342.229919, 39.2802505, 2.102494],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			bool VisibilityEvents = true,
+			bool CastShadows = false,
+			Vec4 Color = [0.855000019, 0.840892494, 0.713925004, 1],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			string SpriteSource = "5275aa4d802dd6dc:Square",
+			bool RenderMask = false,
+			bool FlipX = false,
+			bool FlipY = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 11,
+		},
+		Named = 
+		{
+			string Name = "Sand",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-22.2360477, -11.5917416, -40],
+			Vec3 Scale = [342.229919, 39.2802505, 2.102494],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			bool VisibilityEvents = true,
+			bool CastShadows = false,
+			Vec4 Color = [0.855000019, 0.840892494, 0.713925004, 1],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			string SpriteSource = "5275aa4d802dd6dc:Square",
+			bool RenderMask = false,
+			bool FlipX = false,
+			bool FlipY = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 12,
+		},
+		Named = 
+		{
+			string Name = "Dune",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-326.992584, 30.8375969, -1],
+			Vec3 Scale = [18.501133, 17.5650921, 1.02161932],
+			Quat Rotation = [0, -0.999983191, 0, 0.00579635613],
+		},
+		Sprite = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			bool VisibilityEvents = true,
+			bool CastShadows = false,
+			Vec4 Color = [1, 1, 1, 1],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			string SpriteSource = "5656e009c69665b4:Dune",
+			bool RenderMask = false,
+			bool FlipX = false,
+			bool FlipY = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 13,
+		},
+		Named = 
+		{
+			string Name = "Sandstone Rocks",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-9.81499863, -4.01279545, -3],
+			Vec3 Scale = [7.51886082, 5.90857506, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			bool VisibilityEvents = true,
+			bool CastShadows = false,
+			Vec4 Color = [1, 1, 1, 1],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			string SpriteSource = "5656e23c3205c5a4:Sandstone Rocks",
+			bool RenderMask = false,
+			bool FlipX = false,
+			bool FlipY = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 14,
+		},
+		Named = 
+		{
+			string Name = "Sandstone Rocks",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-36.7623672, -19.1706848, -3],
+			Vec3 Scale = [7.51886082, 5.90857506, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			bool VisibilityEvents = true,
+			bool CastShadows = false,
+			Vec4 Color = [1, 1, 1, 1],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			string SpriteSource = "5656e23c3205c5a4:Sandstone Rocks",
+			bool RenderMask = false,
+			bool FlipX = false,
+			bool FlipY = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 15,
+		},
+		Named = 
+		{
+			string Name = "Sandstone Rocks",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-38.5518417, -11.065423, -3],
+			Vec3 Scale = [7.51886082, 5.90857506, 1],
+			Quat Rotation = [0, 0.999999702, 0, 0.000796393491],
+		},
+		Sprite = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			bool VisibilityEvents = true,
+			bool CastShadows = false,
+			Vec4 Color = [1, 1, 1, 1],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			string SpriteSource = "5656e23c3205c5a4:Sandstone Rocks",
+			bool RenderMask = false,
+			bool FlipX = false,
+			bool FlipY = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 16,
+		},
+		Named = 
+		{
+			string Name = "Sandstone Rocks",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-10.2360506, -12.2233152, -3],
+			Vec3 Scale = [7.51886082, 5.90857506, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			bool VisibilityEvents = true,
+			bool CastShadows = false,
+			Vec4 Color = [1, 1, 1, 1],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			string SpriteSource = "5656e23c3205c5a4:Sandstone Rocks",
+			bool RenderMask = false,
+			bool FlipX = false,
+			bool FlipY = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 17,
+		},
+		Named = 
+		{
+			string Name = "Sandstone Rocks",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-20.9728947, -17.6970062, -3],
+			Vec3 Scale = [7.51886082, 5.90857506, 1],
+			Quat Rotation = [0, 0.999983191, 0, 0.00579635613],
+		},
+		Sprite = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			bool VisibilityEvents = true,
+			bool CastShadows = false,
+			Vec4 Color = [1, 1, 1, 1],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			string SpriteSource = "5656e23c3205c5a4:Sandstone Rocks",
+			bool RenderMask = false,
+			bool FlipX = false,
+			bool FlipY = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 18,
+		},
+		Named = 
+		{
+			string Name = "Sandstone Rocks",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-23.8149986, -9.2759409, -3],
+			Vec3 Scale = [7.51886082, 5.90857506, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			bool VisibilityEvents = true,
+			bool CastShadows = false,
+			Vec4 Color = [1, 1, 1, 1],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			string SpriteSource = "5656e23c3205c5a4:Sandstone Rocks",
+			bool RenderMask = false,
+			bool FlipX = false,
+			bool FlipY = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 19,
+		},
+		Named = 
+		{
+			string Name = "Sandstone Rocks",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-49.8513336, -16.6778603, -3],
+			Vec3 Scale = [7.51886082, 5.90857506, 1],
+			Quat Rotation = [0.175695956, 0.984435499, 0.000738560106, -0.00413819868],
+		},
+		Sprite = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			bool VisibilityEvents = true,
+			bool CastShadows = false,
+			Vec4 Color = [1, 1, 1, 1],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			string SpriteSource = "5656e23c3205c5a4:Sandstone Rocks",
+			bool RenderMask = false,
+			bool FlipX = false,
+			bool FlipY = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 20,
+		},
+		Named = 
+		{
+			string Name = "Sandstone Rocks",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-52.2965469, -24.527113, -3],
+			Vec3 Scale = [7.51886082, 5.90857506, 1],
+			Quat Rotation = [0.175695956, 0.984435499, 0.000738560106, -0.00413819868],
+		},
+		Sprite = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			bool VisibilityEvents = true,
+			bool CastShadows = false,
+			Vec4 Color = [1, 1, 1, 1],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			string SpriteSource = "5656e23c3205c5a4:Sandstone Rocks",
+			bool RenderMask = false,
+			bool FlipX = false,
+			bool FlipY = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 21,
+		},
+		Named = 
+		{
+			string Name = "Sandstone Rocks",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-29.8121147, -40.2214508, -3],
+			Vec3 Scale = [7.51886082, 5.90857506, 1],
+			Quat Rotation = [0.175695956, 0.984435499, 0.000738560106, -0.00413819868],
+		},
+		Sprite = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			bool VisibilityEvents = true,
+			bool CastShadows = false,
+			Vec4 Color = [1, 1, 1, 1],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			string SpriteSource = "5656e23c3205c5a4:Sandstone Rocks",
+			bool RenderMask = false,
+			bool FlipX = false,
+			bool FlipY = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 22,
+		},
+		Named = 
+		{
+			string Name = "Sandstone Rocks",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-38.5368233, -26.4588928, -3],
+			Vec3 Scale = [7.51886082, 5.90857506, 1],
+			Quat Rotation = [0.175695956, 0.984435499, 0.000738560106, -0.00413819868],
+		},
+		Sprite = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			bool VisibilityEvents = true,
+			bool CastShadows = false,
+			Vec4 Color = [1, 1, 1, 1],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			string SpriteSource = "5656e23c3205c5a4:Sandstone Rocks",
+			bool RenderMask = false,
+			bool FlipX = false,
+			bool FlipY = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 23,
+		},
+		Named = 
+		{
+			string Name = "Sandstone Rocks",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-44.1164513, -33.376915, -3],
+			Vec3 Scale = [7.51886082, 5.90857506, 1],
+			Quat Rotation = [0.000279848638, 0.00156800938, 0.175697252, -0.984442949],
+		},
+		Sprite = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			bool VisibilityEvents = true,
+			bool CastShadows = false,
+			Vec4 Color = [1, 1, 1, 1],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			string SpriteSource = "5656e23c3205c5a4:Sandstone Rocks",
+			bool RenderMask = false,
+			bool FlipX = false,
+			bool FlipY = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 24,
+		},
+		Named = 
+		{
+			string Name = "Sandstone Rocks",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-25.3293457, -33.235611, -3],
+			Vec3 Scale = [7.51886082, 5.90857506, 1],
+			Quat Rotation = [-0.000598636689, -0.00335419923, 0.175696522, -0.984438479],
+		},
+		Sprite = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			bool VisibilityEvents = true,
+			bool CastShadows = false,
+			Vec4 Color = [1, 1, 1, 1],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			string SpriteSource = "5656e23c3205c5a4:Sandstone Rocks",
+			bool RenderMask = false,
+			bool FlipX = false,
+			bool FlipY = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 25,
+		},
+		Named = 
+		{
+			string Name = "Location Post",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-27.8942261, -11.6887131, 4],
+			Vec3 Scale = [5.01651525, 4.79937649, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			bool VisibilityEvents = true,
+			bool CastShadows = false,
+			Vec4 Color = [1, 1, 1, 1],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			string SpriteSource = "5656fa1685010c0f:Post1",
+			bool RenderMask = false,
+			bool FlipX = false,
+			bool FlipY = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 26,
+		},
+		Named = 
+		{
+			string Name = "Sandstorm Effect",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-261.629913, -11.8858757, 12],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		SpriteParticleSystem = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			bool VisibilityEvents = true,
+			bool CastShadows = false,
+			SystemChildMode ChildMode = Independent,
+			SystemSpace SystemSpace = WorldSpace,
+			uint DrawOrder = 0,
+			float WarmUpTime = 0,
+			ParticleGeometry GeometryMode = Billboarded,
+			ParticleRenderMode RenderMode = Additive,
+			ParticleSortMode SortMode = Youngest,
+			ParticleAnimation ParticleAnimation = Single,
+			string Texture = "5310e87946eb1d76:Cloud",
+			Vec4 Tint = [0.379999995, 0.345685989, 0.300199986, 1],
+			float VelocityScale = 1,
+			float LengthScale = 1,
+			float MaxParticleSize = 100,
+			Vec3 SystemSize = [4, 4, 4],
+		},
+		SphericalParticleEmitter = 
+		{
+			bool Active = true,
+			uint EmitCount = 0,
+			float EmitRate = 10,
+			float EmitVariance = 0,
+			float Size = 40,
+			float SizeVariance = 0.5,
+			float Lifetime = 1,
+			float LifetimeVariance = 0.200000003,
+			float Spin = 0,
+			float SpinVariance = 50,
+			bool RandomSpin = true,
+			float Fill = 1,
+			float EmitterVelocityPercent = 0,
+			Vec3 StartVelocity = [0, 0, 0],
+			Vec3 RandomVelocity = [2, 2, 2],
+			Vec3 TangentVelocity = [0, 0, 0],
+			Vec3 EmitterSize = [0, 40, 0],
+			bool FastMovingEmitter = false,
+		},
+		LinearParticleAnimator = 
+		{
+			Vec3 Force = [700, 0, 0],
+			Vec3 RandomForce = [0, 0, 0],
+			float Torque = 0,
+			float Growth = 0,
+			float Dampening = 0,
+			Vec3 Twist = [0, 0, 0],
+		},
+		ParticleColorAnimator = 
+		{
+			Vec4 Color0 = [1, 1, 1, 0],
+			Vec4 Color1 = [1, 1, 1, 1],
+			Vec4 Color2 = [1, 1, 1, 1],
+			Vec4 Color3 = [1, 1, 1, 1],
+			Vec4 Color4 = [1, 1, 1, 0],
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 27,
+		},
+		Named = 
+		{
+			string Name = "Sandstone Rocks",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-15.8859177, -41.573925, -3],
+			Vec3 Scale = [7.51886082, 5.90857506, 1],
+			Quat Rotation = [0, 0.999999702, 0, 0.000796393491],
+		},
+		Sprite = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			bool VisibilityEvents = true,
+			bool CastShadows = false,
+			Vec4 Color = [1, 1, 1, 1],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			string SpriteSource = "5656e23c3205c5a4:Sandstone Rocks",
+			bool RenderMask = false,
+			bool FlipX = false,
+			bool FlipY = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 28,
+		},
+		Named = 
+		{
+			string Name = "Sandstone Rocks",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-15.8859177, -41.573925, -3],
+			Vec3 Scale = [7.51886082, 5.90857506, 1],
+			Quat Rotation = [0, 0.999999702, 0, 0.000796393491],
+		},
+		Sprite = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			bool VisibilityEvents = true,
+			bool CastShadows = false,
+			Vec4 Color = [1, 1, 1, 1],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			string SpriteSource = "5656e23c3205c5a4:Sandstone Rocks",
+			bool RenderMask = false,
+			bool FlipX = false,
+			bool FlipY = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 29,
+		},
+		Named = 
+		{
+			string Name = "Sandstone Rocks",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-19.4193897, -48.6408691, -3],
+			Vec3 Scale = [7.51886082, 5.90857506, 1],
+			Quat Rotation = [0, 0.999999702, 0, 0.000796393491],
+		},
+		Sprite = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			bool VisibilityEvents = true,
+			bool CastShadows = false,
+			Vec4 Color = [1, 1, 1, 1],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			string SpriteSource = "5656e23c3205c5a4:Sandstone Rocks",
+			bool RenderMask = false,
+			bool FlipX = false,
+			bool FlipY = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 30,
+		},
+		Named = 
+		{
+			string Name = "Sandstone Rocks",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-32.4329033, -50.1059685, -3],
+			Vec3 Scale = [7.51886082, 5.90857506, 1],
+			Quat Rotation = [0, 0.999999702, 0, 0.000796393491],
+		},
+		Sprite = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			bool VisibilityEvents = true,
+			bool CastShadows = false,
+			Vec4 Color = [1, 1, 1, 1],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			string SpriteSource = "5656e23c3205c5a4:Sandstone Rocks",
+			bool RenderMask = false,
+			bool FlipX = false,
+			bool FlipY = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 31,
+		},
+		Named = 
+		{
+			string Name = "Sandstone Rocks",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-32.4329033, -50.1059685, -3],
+			Vec3 Scale = [7.51886082, 5.90857506, 1],
+			Quat Rotation = [0, 0.999999702, 0, 0.000796393491],
+		},
+		Sprite = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			bool VisibilityEvents = true,
+			bool CastShadows = false,
+			Vec4 Color = [1, 1, 1, 1],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			string SpriteSource = "5656e23c3205c5a4:Sandstone Rocks",
+			bool RenderMask = false,
+			bool FlipX = false,
+			bool FlipY = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 32,
+		},
+		Named = 
+		{
+			string Name = "Sandstone Rocks",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-41.9129448, -44.1594009, -3],
+			Vec3 Scale = [7.51886082, 5.90857506, 1],
+			Quat Rotation = [-0.000159368617, 0.00659080688, -0.0241728537, -0.999686062],
+		},
+		Sprite = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			bool VisibilityEvents = true,
+			bool CastShadows = false,
+			Vec4 Color = [1, 1, 1, 1],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			string SpriteSource = "5656e23c3205c5a4:Sandstone Rocks",
+			bool RenderMask = false,
+			bool FlipX = false,
+			bool FlipY = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 33,
+		},
+		Named = 
+		{
+			string Name = "Portal Effect",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-5.92344999, 23.104105, -6],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		SpriteParticleSystem = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			bool VisibilityEvents = true,
+			bool CastShadows = false,
+			SystemChildMode ChildMode = Independent,
+			SystemSpace SystemSpace = WorldSpace,
+			uint DrawOrder = 0,
+			float WarmUpTime = 0,
+			ParticleGeometry GeometryMode = Billboarded,
+			ParticleRenderMode RenderMode = Additive,
+			ParticleSortMode SortMode = Youngest,
+			ParticleAnimation ParticleAnimation = Single,
+			string Texture = "5310e87a46e703cc:ShockWave",
+			Vec4 Tint = [0.422482491, 0.381375015, 0.675000012, 1],
+			float VelocityScale = 1,
+			float LengthScale = 1,
+			float MaxParticleSize = 100,
+			Vec3 SystemSize = [4, 4, 4],
+		},
+		SphericalParticleEmitter = 
+		{
+			bool Active = true,
+			uint EmitCount = 0,
+			float EmitRate = 5,
+			float EmitVariance = 0,
+			float Size = 50,
+			float SizeVariance = 0.5,
+			float Lifetime = 1,
+			float LifetimeVariance = 0.200000003,
+			float Spin = 0,
+			float SpinVariance = 50,
+			bool RandomSpin = true,
+			float Fill = 1,
+			float EmitterVelocityPercent = 0,
+			Vec3 StartVelocity = [0, 0, 0],
+			Vec3 RandomVelocity = [2, 2, 2],
+			Vec3 TangentVelocity = [0, 0, 0],
+			Vec3 EmitterSize = [0, 0, 0],
+			bool FastMovingEmitter = false,
+		},
+		LinearParticleAnimator = 
+		{
+			Vec3 Force = [0, 0, 0],
+			Vec3 RandomForce = [0, 0, 0],
+			float Torque = -67.9637146,
+			float Growth = 0,
+			float Dampening = 0,
+			Vec3 Twist = [0, 0, 0],
+		},
+		ParticleColorAnimator = 
+		{
+			Vec4 Color0 = [1, 1, 1, 0],
+			Vec4 Color1 = [1, 1, 1, 1],
+			Vec4 Color2 = [1, 1, 1, 1],
+			Vec4 Color3 = [1, 1, 1, 1],
+			Vec4 Color4 = [1, 1, 1, 0],
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 34,
+		},
+		Named = 
+		{
+			string Name = "Crab",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-134.37851, -4.50442505, 0.000144585181],
+			Vec3 Scale = [5.18068886, 5.75647354, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			bool VisibilityEvents = true,
+			bool CastShadows = false,
+			Vec4 Color = [1, 1, 1, 1],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			string SpriteSource = "5655ae25b42a7fc0:Crab",
+			bool RenderMask = false,
+			bool FlipX = false,
+			bool FlipY = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+		},
+		RigidBody = 
+		{
+			bool Static = false,
+			bool Asleep = false,
+			bool Kinematic = true,
+			bool RotationLocked = false,
+			bool Mode2D = true,
+			bool AllowSleep = true,
+			bool Inherit2DMode = true,
+			Vec3 Velocity = [0, 0, 0],
+			Vec3 AngularVelocity = [0, 0, 0],
+		},
+		MultiConvexMeshCollider = 
+		{
+			bool Ghost = false,
+			bool SendsMessages = true,
+			bool Seamless = true,
+			string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
+			string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+			Vec3 Offset = [0, 0, 0],
+			string MeshName = "5655ae64a6409110:Crab",
+		},
+		EnemyController = 
+		{
+			float PaceSpeed = 10,
+			float ChaseSpeed = 10,
+			CogPath TargetObject = 
+			{
+				string Path = ":/Joe",
+				bool ErrorOnResolveToNull = false,
+				bool ErrorOnPathCantCompute = false,
+				bool ErrorOnDirectLinkFail = false,
+				bool UpdateCogOnPathChange = true,
+				bool UpdatePathOnCogChange = true,
+				bool UpdateCogOnInitialize = true,
+				bool ResolvedNullErrorOccurred = false,
+				uint ResolvedCog = 4,
+				CogPathPreference PathPreference0 = CogRelative,
+				CogPathPreference PathPreference1 = SpaceRelative,
+				CogPathPreference PathPreference2 = Absolute,
+			},
+		},
+		Orientation = 
+		{
+			Vec3 GlobalUp = [0, 1, 0],
+			Vec3 UpVector = [0, 1, 0],
+			Vec3 ForwardVector = [0, 0, 1],
+			OrientationBases DefaultBases = ForwardZUpY,
+		},
+		HealthScript = 
+		{
+			float Health = 15,
+		},
+		EnemyLava = 
+		{
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 35,
+		},
+		Named = 
+		{
+			string Name = "Crab",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-198.786224, -49.5119019, 0.000163658668],
+			Vec3 Scale = [5.18068886, 5.75647354, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			bool VisibilityEvents = true,
+			bool CastShadows = false,
+			Vec4 Color = [1, 1, 1, 1],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			string SpriteSource = "5655ae25b42a7fc0:Crab",
+			bool RenderMask = false,
+			bool FlipX = false,
+			bool FlipY = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+		},
+		RigidBody = 
+		{
+			bool Static = false,
+			bool Asleep = false,
+			bool Kinematic = true,
+			bool RotationLocked = false,
+			bool Mode2D = true,
+			bool AllowSleep = true,
+			bool Inherit2DMode = true,
+			Vec3 Velocity = [0, 0, 0],
+			Vec3 AngularVelocity = [0, 0, 0],
+		},
+		MultiConvexMeshCollider = 
+		{
+			bool Ghost = false,
+			bool SendsMessages = true,
+			bool Seamless = true,
+			string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
+			string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+			Vec3 Offset = [0, 0, 0],
+			string MeshName = "5655ae64a6409110:Crab",
+		},
+		EnemyController = 
+		{
+			float PaceSpeed = 10,
+			float ChaseSpeed = 10,
+			CogPath TargetObject = 
+			{
+				string Path = ":/Joe",
+				bool ErrorOnResolveToNull = false,
+				bool ErrorOnPathCantCompute = false,
+				bool ErrorOnDirectLinkFail = false,
+				bool UpdateCogOnPathChange = true,
+				bool UpdatePathOnCogChange = true,
+				bool UpdateCogOnInitialize = true,
+				bool ResolvedNullErrorOccurred = false,
+				uint ResolvedCog = 4,
+				CogPathPreference PathPreference0 = CogRelative,
+				CogPathPreference PathPreference1 = SpaceRelative,
+				CogPathPreference PathPreference2 = Absolute,
+			},
+		},
+		Orientation = 
+		{
+			Vec3 GlobalUp = [0, 1, 0],
+			Vec3 UpVector = [0, 1, 0],
+			Vec3 ForwardVector = [0, 0, 1],
+			OrientationBases DefaultBases = ForwardZUpY,
+		},
+		HealthScript = 
+		{
+			float Health = 15,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 36,
+		},
+		Named = 
+		{
+			string Name = "Crab",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-220.256409, -2.26654053, 0.000163658668],
+			Vec3 Scale = [5.18068886, 5.75647354, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			bool VisibilityEvents = true,
+			bool CastShadows = false,
+			Vec4 Color = [1, 1, 1, 1],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			string SpriteSource = "5655ae25b42a7fc0:Crab",
+			bool RenderMask = false,
+			bool FlipX = false,
+			bool FlipY = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+		},
+		RigidBody = 
+		{
+			bool Static = false,
+			bool Asleep = false,
+			bool Kinematic = true,
+			bool RotationLocked = false,
+			bool Mode2D = true,
+			bool AllowSleep = true,
+			bool Inherit2DMode = true,
+			Vec3 Velocity = [0, 0, 0],
+			Vec3 AngularVelocity = [0, 0, 0],
+		},
+		MultiConvexMeshCollider = 
+		{
+			bool Ghost = false,
+			bool SendsMessages = true,
+			bool Seamless = true,
+			string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
+			string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+			Vec3 Offset = [0, 0, 0],
+			string MeshName = "5655ae64a6409110:Crab",
+		},
+		EnemyController = 
+		{
+			float PaceSpeed = 10,
+			float ChaseSpeed = 10,
+			CogPath TargetObject = 
+			{
+				string Path = ":/Joe",
+				bool ErrorOnResolveToNull = false,
+				bool ErrorOnPathCantCompute = false,
+				bool ErrorOnDirectLinkFail = false,
+				bool UpdateCogOnPathChange = true,
+				bool UpdatePathOnCogChange = true,
+				bool UpdateCogOnInitialize = true,
+				bool ResolvedNullErrorOccurred = false,
+				uint ResolvedCog = 4,
+				CogPathPreference PathPreference0 = CogRelative,
+				CogPathPreference PathPreference1 = SpaceRelative,
+				CogPathPreference PathPreference2 = Absolute,
+			},
+		},
+		Orientation = 
+		{
+			Vec3 GlobalUp = [0, 1, 0],
+			Vec3 UpVector = [0, 1, 0],
+			Vec3 ForwardVector = [0, 0, 1],
+			OrientationBases DefaultBases = ForwardZUpY,
+		},
+		HealthScript = 
+		{
+			float Health = 15,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 37,
+		},
+		Named = 
+		{
+			string Name = "Sandstone Rocks",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-73.1131439, -43.2069321, -2.99999619],
+			Vec3 Scale = [7.51886082, 5.90857506, 1],
+			Quat Rotation = [0, 0.999983191, 0, 0.00579635613],
+		},
+		Sprite = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			bool VisibilityEvents = true,
+			bool CastShadows = false,
+			Vec4 Color = [1, 1, 1, 1],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			string SpriteSource = "5656e23c3205c5a4:Sandstone Rocks",
+			bool RenderMask = false,
+			bool FlipX = false,
+			bool FlipY = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 38,
+		},
+		Named = 
+		{
+			string Name = "Sandstone Rocks",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-62.376297, -37.733242, -2.99999619],
+			Vec3 Scale = [7.51886082, 5.90857506, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			bool VisibilityEvents = true,
+			bool CastShadows = false,
+			Vec4 Color = [1, 1, 1, 1],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			string SpriteSource = "5656e23c3205c5a4:Sandstone Rocks",
+			bool RenderMask = false,
+			bool FlipX = false,
+			bool FlipY = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 39,
+		},
+		Named = 
+		{
+			string Name = "Sandstone Rocks",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-88.9026108, -44.6806107, -2.99999619],
+			Vec3 Scale = [7.51886082, 5.90857506, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			bool VisibilityEvents = true,
+			bool CastShadows = false,
+			Vec4 Color = [1, 1, 1, 1],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			string SpriteSource = "5656e23c3205c5a4:Sandstone Rocks",
+			bool RenderMask = false,
+			bool FlipX = false,
+			bool FlipY = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 40,
+		},
+		Named = 
+		{
+			string Name = "Sandstone Rocks",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-75.955246, -34.7858658, -2.99999619],
+			Vec3 Scale = [7.51886082, 5.90857506, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			bool VisibilityEvents = true,
+			bool CastShadows = false,
+			Vec4 Color = [1, 1, 1, 1],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			string SpriteSource = "5656e23c3205c5a4:Sandstone Rocks",
+			bool RenderMask = false,
+			bool FlipX = false,
+			bool FlipY = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 41,
+		},
+		Named = 
+		{
+			string Name = "Sandstone Rocks",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-90.6920853, -36.5753479, -2.99999619],
+			Vec3 Scale = [7.51886082, 5.90857506, 1],
+			Quat Rotation = [0, 0.999999702, 0, 0.000796393491],
+		},
+		Sprite = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			bool VisibilityEvents = true,
+			bool CastShadows = false,
+			Vec4 Color = [1, 1, 1, 1],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			string SpriteSource = "5656e23c3205c5a4:Sandstone Rocks",
+			bool RenderMask = false,
+			bool FlipX = false,
+			bool FlipY = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 42,
+		},
+		Named = 
+		{
+			string Name = "Sandstone Rocks",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-61.955246, -29.5227203, -2.99999619],
+			Vec3 Scale = [7.51886082, 5.90857506, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			bool VisibilityEvents = true,
+			bool CastShadows = false,
+			Vec4 Color = [1, 1, 1, 1],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			string SpriteSource = "5656e23c3205c5a4:Sandstone Rocks",
+			bool RenderMask = false,
+			bool FlipX = false,
+			bool FlipY = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 43,
+		},
+		Named = 
+		{
+			string Name = "Sandstone Rocks",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-113.954292, -56.0763931, -2.99999619],
+			Vec3 Scale = [7.51886082, 5.90857506, 1],
+			Quat Rotation = [0, 0.999983191, 0, 0.00579635613],
+		},
+		Sprite = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			bool VisibilityEvents = true,
+			bool CastShadows = false,
+			Vec4 Color = [1, 1, 1, 1],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			string SpriteSource = "5656e23c3205c5a4:Sandstone Rocks",
+			bool RenderMask = false,
+			bool FlipX = false,
+			bool FlipY = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 44,
+		},
+		Named = 
+		{
+			string Name = "Sandstone Rocks",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-129.743774, -57.5500717, -2.99999619],
+			Vec3 Scale = [7.51886082, 5.90857506, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			bool VisibilityEvents = true,
+			bool CastShadows = false,
+			Vec4 Color = [1, 1, 1, 1],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			string SpriteSource = "5656e23c3205c5a4:Sandstone Rocks",
+			bool RenderMask = false,
+			bool FlipX = false,
+			bool FlipY = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 45,
+		},
+		Named = 
+		{
+			string Name = "Sandstone Rocks",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-103.217445, -50.6027031, -2.99999619],
+			Vec3 Scale = [7.51886082, 5.90857506, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			bool VisibilityEvents = true,
+			bool CastShadows = false,
+			Vec4 Color = [1, 1, 1, 1],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			string SpriteSource = "5656e23c3205c5a4:Sandstone Rocks",
+			bool RenderMask = false,
+			bool FlipX = false,
+			bool FlipY = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 46,
+		},
+		Named = 
+		{
+			string Name = "Sandstone Rocks",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-131.533234, -49.444809, -2.99999619],
+			Vec3 Scale = [7.51886082, 5.90857506, 1],
+			Quat Rotation = [0, 0.999999702, 0, 0.000796393491],
+		},
+		Sprite = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			bool VisibilityEvents = true,
+			bool CastShadows = false,
+			Vec4 Color = [1, 1, 1, 1],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			string SpriteSource = "5656e23c3205c5a4:Sandstone Rocks",
+			bool RenderMask = false,
+			bool FlipX = false,
+			bool FlipY = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 47,
+		},
+		Named = 
+		{
+			string Name = "Sandstone Rocks",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-102.796394, -42.3921814, -2.99999619],
+			Vec3 Scale = [7.51886082, 5.90857506, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			bool VisibilityEvents = true,
+			bool CastShadows = false,
+			Vec4 Color = [1, 1, 1, 1],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			string SpriteSource = "5656e23c3205c5a4:Sandstone Rocks",
+			bool RenderMask = false,
+			bool FlipX = false,
+			bool FlipY = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 48,
+		},
+		Named = 
+		{
+			string Name = "Sandstone Rocks",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-116.796394, -47.6553268, -2.99999619],
+			Vec3 Scale = [7.51886082, 5.90857506, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			bool VisibilityEvents = true,
+			bool CastShadows = false,
+			Vec4 Color = [1, 1, 1, 1],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			string SpriteSource = "5656e23c3205c5a4:Sandstone Rocks",
+			bool RenderMask = false,
+			bool FlipX = false,
+			bool FlipY = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 49,
+		},
+		Named = 
+		{
+			string Name = "Sand",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-22.2360477, -90.0128021, -40],
+			Vec3 Scale = [342.229919, 39.2802505, 2.102494],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			bool VisibilityEvents = true,
+			bool CastShadows = false,
+			Vec4 Color = [0.855000019, 0.840892494, 0.713925004, 1],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			string SpriteSource = "5275aa4d802dd6dc:Square",
+			bool RenderMask = false,
+			bool FlipX = false,
+			bool FlipY = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 50,
+		},
+		Named = 
+		{
+			string Name = "Sand",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-360.551819, -90.0128021, -40],
+			Vec3 Scale = [342.229919, 39.2802505, 2.102494],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			bool VisibilityEvents = true,
+			bool CastShadows = false,
+			Vec4 Color = [0.855000019, 0.840892494, 0.713925004, 1],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			string SpriteSource = "5275aa4d802dd6dc:Square",
+			bool RenderMask = false,
+			bool FlipX = false,
+			bool FlipY = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 51,
+		},
+		Named = 
+		{
+			string Name = "Sand",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-360.551819, -50.8549042, -40],
+			Vec3 Scale = [342.229919, 39.2802505, 2.102494],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			bool VisibilityEvents = true,
+			bool CastShadows = false,
+			Vec4 Color = [0.855000019, 0.840892494, 0.713925004, 1],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			string SpriteSource = "5275aa4d802dd6dc:Square",
+			bool RenderMask = false,
+			bool FlipX = false,
+			bool FlipY = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 52,
+		},
+		Named = 
+		{
+			string Name = "Sand",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-360.551819, -11.6969986, -40],
+			Vec3 Scale = [342.229919, 39.2802505, 2.102494],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			bool VisibilityEvents = true,
+			bool CastShadows = false,
+			Vec4 Color = [0.855000019, 0.840892494, 0.713925004, 1],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			string SpriteSource = "5275aa4d802dd6dc:Square",
+			bool RenderMask = false,
+			bool FlipX = false,
+			bool FlipY = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 53,
+		},
+		Named = 
+		{
+			string Name = "Sandstone Rocks",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-185.217438, -77.6553268, -2.99999619],
+			Vec3 Scale = [7.51886082, 5.90857506, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			bool VisibilityEvents = true,
+			bool CastShadows = false,
+			Vec4 Color = [1, 1, 1, 1],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			string SpriteSource = "5656e23c3205c5a4:Sandstone Rocks",
+			bool RenderMask = false,
+			bool FlipX = false,
+			bool FlipY = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 54,
+		},
+		Named = 
+		{
+			string Name = "Sandstone Rocks",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-198.796387, -74.7079544, -2.99999619],
+			Vec3 Scale = [7.51886082, 5.90857506, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			bool VisibilityEvents = true,
+			bool CastShadows = false,
+			Vec4 Color = [1, 1, 1, 1],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			string SpriteSource = "5656e23c3205c5a4:Sandstone Rocks",
+			bool RenderMask = false,
+			bool FlipX = false,
+			bool FlipY = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 55,
+		},
+		Named = 
+		{
+			string Name = "Sandstone Rocks",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-213.533218, -76.4974365, -2.99999619],
+			Vec3 Scale = [7.51886082, 5.90857506, 1],
+			Quat Rotation = [0, 0.999999702, 0, 0.000796393491],
+		},
+		Sprite = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			bool VisibilityEvents = true,
+			bool CastShadows = false,
+			Vec4 Color = [1, 1, 1, 1],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			string SpriteSource = "5656e23c3205c5a4:Sandstone Rocks",
+			bool RenderMask = false,
+			bool FlipX = false,
+			bool FlipY = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 56,
+		},
+		Named = 
+		{
+			string Name = "Sandstone Rocks",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-195.849014, -83.0237579, -2.99999619],
+			Vec3 Scale = [7.51886082, 5.90857506, 1],
+			Quat Rotation = [0, 0.999983191, 0, 0.00579635613],
+		},
+		Sprite = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			bool VisibilityEvents = true,
+			bool CastShadows = false,
+			Vec4 Color = [1, 1, 1, 1],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			string SpriteSource = "5656e23c3205c5a4:Sandstone Rocks",
+			bool RenderMask = false,
+			bool FlipX = false,
+			bool FlipY = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 57,
+		},
+		Named = 
+		{
+			string Name = "Sandstone Rocks",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-211.743759, -84.6026993, -2.99999619],
+			Vec3 Scale = [7.51886082, 5.90857506, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			bool VisibilityEvents = true,
+			bool CastShadows = false,
+			Vec4 Color = [1, 1, 1, 1],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			string SpriteSource = "5656e23c3205c5a4:Sandstone Rocks",
+			bool RenderMask = false,
+			bool FlipX = false,
+			bool FlipY = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 58,
+		},
+		Named = 
+		{
+			string Name = "Sandstone Rocks",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-184.796387, -69.444809, -2.99999619],
+			Vec3 Scale = [7.51886082, 5.90857506, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			bool VisibilityEvents = true,
+			bool CastShadows = false,
+			Vec4 Color = [1, 1, 1, 1],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			string SpriteSource = "5656e23c3205c5a4:Sandstone Rocks",
+			bool RenderMask = false,
+			bool FlipX = false,
+			bool FlipY = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 59,
+		},
+		Named = 
+		{
+			string Name = "Sandstone Rocks",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-157.743759, -60.8132248, -2.99999619],
+			Vec3 Scale = [7.51886082, 5.90857506, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			bool VisibilityEvents = true,
+			bool CastShadows = false,
+			Vec4 Color = [1, 1, 1, 1],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			string SpriteSource = "5656e23c3205c5a4:Sandstone Rocks",
+			bool RenderMask = false,
+			bool FlipX = false,
+			bool FlipY = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 60,
+		},
+		Named = 
+		{
+			string Name = "Sandstone Rocks",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-154.901657, -69.2342911, -2.99999619],
+			Vec3 Scale = [7.51886082, 5.90857506, 1],
+			Quat Rotation = [0, 0.999983191, 0, 0.00579635613],
+		},
+		Sprite = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			bool VisibilityEvents = true,
+			bool CastShadows = false,
+			Vec4 Color = [1, 1, 1, 1],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			string SpriteSource = "5656e23c3205c5a4:Sandstone Rocks",
+			bool RenderMask = false,
+			bool FlipX = false,
+			bool FlipY = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 61,
+		},
+		Named = 
+		{
+			string Name = "Sandstone Rocks",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-144.16481, -63.7605972, -2.99999619],
+			Vec3 Scale = [7.51886082, 5.90857506, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			bool VisibilityEvents = true,
+			bool CastShadows = false,
+			Vec4 Color = [1, 1, 1, 1],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			string SpriteSource = "5656e23c3205c5a4:Sandstone Rocks",
+			bool RenderMask = false,
+			bool FlipX = false,
+			bool FlipY = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 62,
+		},
+		Named = 
+		{
+			string Name = "Sandstone Rocks",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-170.691132, -70.7079697, -2.99999619],
+			Vec3 Scale = [7.51886082, 5.90857506, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			bool VisibilityEvents = true,
+			bool CastShadows = false,
+			Vec4 Color = [1, 1, 1, 1],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			string SpriteSource = "5656e23c3205c5a4:Sandstone Rocks",
+			bool RenderMask = false,
+			bool FlipX = false,
+			bool FlipY = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 63,
+		},
+		Named = 
+		{
+			string Name = "Sandstone Rocks",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-143.743759, -55.5500793, -2.99999619],
+			Vec3 Scale = [7.51886082, 5.90857506, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			bool VisibilityEvents = true,
+			bool CastShadows = false,
+			Vec4 Color = [1, 1, 1, 1],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			string SpriteSource = "5656e23c3205c5a4:Sandstone Rocks",
+			bool RenderMask = false,
+			bool FlipX = false,
+			bool FlipY = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 64,
+		},
+		Named = 
+		{
+			string Name = "Sandstone Rocks",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-172.480591, -62.6027069, -2.99999619],
+			Vec3 Scale = [7.51886082, 5.90857506, 1],
+			Quat Rotation = [0, 0.999999702, 0, 0.000796393491],
+		},
+		Sprite = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			bool VisibilityEvents = true,
+			bool CastShadows = false,
+			Vec4 Color = [1, 1, 1, 1],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			string SpriteSource = "5656e23c3205c5a4:Sandstone Rocks",
+			bool RenderMask = false,
+			bool FlipX = false,
+			bool FlipY = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 65,
+		},
+		Named = 
+		{
+			string Name = "Crab",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [98.8846359, -5.45179653, 0.000125511695],
+			Vec3 Scale = [5.18068886, 5.75647354, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			bool VisibilityEvents = true,
+			bool CastShadows = false,
+			Vec4 Color = [1, 1, 1, 1],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			string SpriteSource = "5655ae25b42a7fc0:Crab",
+			bool RenderMask = false,
+			bool FlipX = false,
+			bool FlipY = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+		},
+		RigidBody = 
+		{
+			bool Static = false,
+			bool Asleep = false,
+			bool Kinematic = true,
+			bool RotationLocked = false,
+			bool Mode2D = true,
+			bool AllowSleep = true,
+			bool Inherit2DMode = true,
+			Vec3 Velocity = [0, 0, 0],
+			Vec3 AngularVelocity = [0, 0, 0],
+		},
+		MultiConvexMeshCollider = 
+		{
+			bool Ghost = false,
+			bool SendsMessages = true,
+			bool Seamless = true,
+			string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
+			string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+			Vec3 Offset = [0, 0, 0],
+			string MeshName = "5655ae64a6409110:Crab",
+		},
+		EnemyController = 
+		{
+			float PaceSpeed = 10,
+			float ChaseSpeed = 10,
+			CogPath TargetObject = 
+			{
+				string Path = ":/Joe",
+				bool ErrorOnResolveToNull = false,
+				bool ErrorOnPathCantCompute = false,
+				bool ErrorOnDirectLinkFail = false,
+				bool UpdateCogOnPathChange = true,
+				bool UpdatePathOnCogChange = true,
+				bool UpdateCogOnInitialize = true,
+				bool ResolvedNullErrorOccurred = false,
+				uint ResolvedCog = 4,
+				CogPathPreference PathPreference0 = CogRelative,
+				CogPathPreference PathPreference1 = SpaceRelative,
+				CogPathPreference PathPreference2 = Absolute,
+			},
+		},
+		Orientation = 
+		{
+			Vec3 GlobalUp = [0, 1, 0],
+			Vec3 UpVector = [0, 1, 0],
+			Vec3 ForwardVector = [0, 0, 1],
+			OrientationBases DefaultBases = ForwardZUpY,
+		},
+		HealthScript = 
+		{
+			float Health = 15,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 66,
+		},
+		Named = 
+		{
+			string Name = "Crab",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [98.8846359, -5.45179653, 0.000125511695],
+			Vec3 Scale = [5.18068886, 5.75647354, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			bool VisibilityEvents = true,
+			bool CastShadows = false,
+			Vec4 Color = [1, 1, 1, 1],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			string SpriteSource = "5655ae25b42a7fc0:Crab",
+			bool RenderMask = false,
+			bool FlipX = false,
+			bool FlipY = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+		},
+		RigidBody = 
+		{
+			bool Static = false,
+			bool Asleep = false,
+			bool Kinematic = true,
+			bool RotationLocked = false,
+			bool Mode2D = true,
+			bool AllowSleep = true,
+			bool Inherit2DMode = true,
+			Vec3 Velocity = [0, 0, 0],
+			Vec3 AngularVelocity = [0, 0, 0],
+		},
+		MultiConvexMeshCollider = 
+		{
+			bool Ghost = false,
+			bool SendsMessages = true,
+			bool Seamless = true,
+			string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
+			string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+			Vec3 Offset = [0, 0, 0],
+			string MeshName = "5655ae64a6409110:Crab",
+		},
+		EnemyController = 
+		{
+			float PaceSpeed = 10,
+			float ChaseSpeed = 10,
+			CogPath TargetObject = 
+			{
+				string Path = ":/Joe",
+				bool ErrorOnResolveToNull = false,
+				bool ErrorOnPathCantCompute = false,
+				bool ErrorOnDirectLinkFail = false,
+				bool UpdateCogOnPathChange = true,
+				bool UpdatePathOnCogChange = true,
+				bool UpdateCogOnInitialize = true,
+				bool ResolvedNullErrorOccurred = false,
+				uint ResolvedCog = 4,
+				CogPathPreference PathPreference0 = CogRelative,
+				CogPathPreference PathPreference1 = SpaceRelative,
+				CogPathPreference PathPreference2 = Absolute,
+			},
+		},
+		Orientation = 
+		{
+			Vec3 GlobalUp = [0, 1, 0],
+			Vec3 UpVector = [0, 1, 0],
+			Vec3 ForwardVector = [0, 0, 1],
+			OrientationBases DefaultBases = ForwardZUpY,
+		},
+		HealthScript = 
+		{
+			float Health = 15,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 67,
+		},
+		Named = 
+		{
+			string Name = "Crab",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [63.4109573, -42.1886444, 4.15883551e-005],
+			Vec3 Scale = [5.18068886, 5.75647354, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			bool VisibilityEvents = true,
+			bool CastShadows = false,
+			Vec4 Color = [1, 1, 1, 1],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			string SpriteSource = "5655ae25b42a7fc0:Crab",
+			bool RenderMask = false,
+			bool FlipX = false,
+			bool FlipY = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+		},
+		RigidBody = 
+		{
+			bool Static = false,
+			bool Asleep = false,
+			bool Kinematic = true,
+			bool RotationLocked = false,
+			bool Mode2D = true,
+			bool AllowSleep = true,
+			bool Inherit2DMode = true,
+			Vec3 Velocity = [0, 0, 0],
+			Vec3 AngularVelocity = [0, 0, 0],
+		},
+		MultiConvexMeshCollider = 
+		{
+			bool Ghost = false,
+			bool SendsMessages = true,
+			bool Seamless = true,
+			string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
+			string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+			Vec3 Offset = [0, 0, 0],
+			string MeshName = "5655ae64a6409110:Crab",
+		},
+		EnemyController = 
+		{
+			float PaceSpeed = 10,
+			float ChaseSpeed = 10,
+			CogPath TargetObject = 
+			{
+				string Path = ":/Joe",
+				bool ErrorOnResolveToNull = false,
+				bool ErrorOnPathCantCompute = false,
+				bool ErrorOnDirectLinkFail = false,
+				bool UpdateCogOnPathChange = true,
+				bool UpdatePathOnCogChange = true,
+				bool UpdateCogOnInitialize = true,
+				bool ResolvedNullErrorOccurred = false,
+				uint ResolvedCog = 4,
+				CogPathPreference PathPreference0 = CogRelative,
+				CogPathPreference PathPreference1 = SpaceRelative,
+				CogPathPreference PathPreference2 = Absolute,
+			},
+		},
+		Orientation = 
+		{
+			Vec3 GlobalUp = [0, 1, 0],
+			Vec3 UpVector = [0, 1, 0],
+			Vec3 ForwardVector = [0, 0, 1],
+			OrientationBases DefaultBases = ForwardZUpY,
+		},
+		HealthScript = 
+		{
+			float Health = 15,
+		},
+	},
+},
