@@ -1,0 +1,8 @@
+TextContent = 
+{
+	ZilchScriptBuilder = 
+	{
+		string Name = "DestroyCrab",
+		uint64 ResourceId = 5659cdf31dc59028,
+	},
+},

@@ -1,0 +1,20 @@
+ImageContent = 
+{
+	SpriteSourceBuilder = 
+	{
+		string Name = "Vendor Animation",
+		uint64 ResourceId = 56433d4a1d38baae,
+		uint64 AtlasId = 5274cf95e4a661fd,
+		uint FrameSizeX = 280,
+		uint FrameSizeY = 501,
+		uint FrameCount = 4,
+		float FrameDelay = 0.200000003,
+		float OriginX = 140,
+		float OriginY = 250,
+		float PixelsPerUnit = 64,
+		bool Smoothing = true,
+		bool Looping = true,
+		Vec4 Slices = [0, 0, 0, 0],
+		SpriteFill Fill = Stretch,
+	},
+},

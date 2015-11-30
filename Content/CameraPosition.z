@@ -1,17 +1,14 @@
-class HealthScript : ZilchComponent
+class CameraPosition : ZilchComponent
 {
-    [Property] var Health : Real = 20;
     function Initialize(init : CogInitializer)
     {
-        Console.WriteLine(this.Health);
         Zero.Connect(this.Space, Events.LogicUpdate, this.OnLogicUpdate);
     }
 
     function OnLogicUpdate(event : UpdateEvent)
     {
-        if(this.Health <= 0)
-        {
-     this.Owner.Destroy();
-        }
+        var temp = this.Space.FindObjectByName("Joe").Transform.Translation;
+        temp.Z = 80;
+        this.Owner.Transform.Translation = temp;
     }
 }

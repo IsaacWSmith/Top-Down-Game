@@ -1,0 +1,28 @@
+class TypyTypy2 : ZilchComponent
+{
+    //creates the time and character count variables
+    var Time : Real = 0.0;
+    var CharCount : Integer = 0;
+    function Initialize(init : CogInitializer)
+    {
+        Zero.Connect(this.Space, Events.LogicUpdate, this.OnLogicUpdate);
+    }
+
+    function OnLogicUpdate(event : UpdateEvent)
+    {
+        //adds up the time
+        this.Time += event.Dt;
+        //the string to be displayed
+        var wordz = "I wouldn't go in there if I were you.";
+        //if the time elapsed is sufficient and the string still has characters
+        //add another character to the sprite text
+        if(this.Time > 0.02 && this.CharCount < wordz.Count)
+        {
+            this.CharCount +=1;
+            var temp = wordz.SubString(0, this.CharCount);
+            this.Time = 0;
+            this.Owner.SpriteText.Text = temp;
+        }
+        
+    }
+}

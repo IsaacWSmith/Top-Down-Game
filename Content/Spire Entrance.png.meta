@@ -1,0 +1,20 @@
+ImageContent = 
+{
+	SpriteSourceBuilder = 
+	{
+		string Name = "Spire Entrance",
+		uint64 ResourceId = 564b5148d961d91d,
+		uint64 AtlasId = 5274cf95e4a661fd,
+		uint FrameSizeX = 140,
+		uint FrameSizeY = 80,
+		uint FrameCount = 1,
+		float FrameDelay = 0.0833333358,
+		float OriginX = 70,
+		float OriginY = 40,
+		float PixelsPerUnit = 64,
+		bool Smoothing = false,
+		bool Looping = true,
+		Vec4 Slices = [0, 0, 0, 0],
+		SpriteFill Fill = Stretch,
+	},
+},

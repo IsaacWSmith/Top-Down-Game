@@ -1,0 +1,20 @@
+ImageContent = 
+{
+	SpriteSourceBuilder = 
+	{
+		string Name = "snake animation",
+		uint64 ResourceId = 5659d101c76c0695,
+		uint64 AtlasId = 5274cf95e4a661fd,
+		uint FrameSizeX = 105,
+		uint FrameSizeY = 131,
+		uint FrameCount = 5,
+		float FrameDelay = 0.0833333358,
+		float OriginX = 52,
+		float OriginY = 65,
+		float PixelsPerUnit = 64,
+		bool Smoothing = false,
+		bool Looping = true,
+		Vec4 Slices = [0, 0, 0, 0],
+		SpriteFill Fill = Stretch,
+	},
+},

@@ -1,0 +1,20 @@
+ImageContent = 
+{
+	SpriteSourceBuilder = 
+	{
+		string Name = "Bat",
+		uint64 ResourceId = 564b2f86df8aad3f,
+		uint64 AtlasId = 5274cf95e4a661fd,
+		uint FrameSizeX = 224,
+		uint FrameSizeY = 235,
+		uint FrameCount = 7,
+		float FrameDelay = 0.0833333358,
+		float OriginX = 112,
+		float OriginY = 117,
+		float PixelsPerUnit = 64,
+		bool Smoothing = false,
+		bool Looping = true,
+		Vec4 Slices = [0, 0, 0, 0],
+		SpriteFill Fill = Stretch,
+	},
+},
